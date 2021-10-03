@@ -1,11 +1,10 @@
-package com.poo.bieninmueble.pruebas;
+
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 import com.poo.bieninmueble.logicaDeNegocios.Agente;
 
-public class JUnitAgente {
+public class JUnitAgenteTest {
 	
 		@Test
 		public void setUp() {
@@ -28,7 +27,7 @@ public class JUnitAgente {
 			//Null
 			assertNull(m1.getContrasenna());
 			
-			//Sane
+			
 			assertSame(m1.getIdentificacion(),"1234");
 			
 			//Not same
