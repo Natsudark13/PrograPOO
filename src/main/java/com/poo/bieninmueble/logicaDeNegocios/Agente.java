@@ -65,6 +65,16 @@ public class Agente implements IAgente {
     numeroTelefono = pNumeroTelefono;
     bdAgente = new DaoAgente();
   }
+  
+  public Agente(String pIdentifiacion, String pNombre, String pApellido, String pCorreo,
+		    String pNumeroTelefono, String dao) {
+		    identificacion = pIdentifiacion;
+		    nombre = pNombre;
+		    apellido = pApellido;
+		    correo = pCorreo;
+		    numeroTelefono = pNumeroTelefono;
+		    bdAgente = null;
+		  }
 
   /**
    * Método que registra un nuevo agente en la base de datos, XML y envia correo electrónico para
